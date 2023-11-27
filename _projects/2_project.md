@@ -1,81 +1,31 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Nuclear Berry curvature effects
+description: Investigating the interplay between Berry force and angular momentum transfer. 
+img: assets/img/project2.png
 importance: 2
 category: work
-giscus_comments: true
+related_publications: xuezhi_mfbc, xuezhi_angularmomentum 
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Under the Born-Oppenheimer theory, the total molecular wavefunction is separated into electronic and nuclear components according to a mass difference. One solves the electronic stucture problem with fixed nuclear geometry and propagates nuclear dynamics on the electronic energy surfaces. 
+Many intriguing effects has emerged naturally from the gauge structure introduced by the Born-Oppenheimer theory. For example, the nuclear wavefunction will experience a sign-chage during a cyclic motion around a conical intersection which is known as the molecular geometric phase effect. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Another effect that emerges from the gauge structure is the pseudo-electromagnetic field, leading to non-trivial interaction with the nuclear degrees of freedom. 
+Although often ignored in Born-Oppenheimer molecular dynamics, we found that such a pseudo-electromagnetic force (or a Berry force) applied onto classical nuclei has an important implication. 
+We proved both analytically and numerically that the inclusion of the nuclear Berry force is essential for the total angular momentum conservation in BOMD. Also, the Berry force plays an important role in the angular momentum transfer process between nuclei, electrons and spin. 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project2.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/bf.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div class="caption"> 
+ On the left, demonstration of the methoxy radical isomerization reaction thourgh a vally-ridge inflection point. 
+ On the right, real time angular momentum results from ab initio BOMD with and without Berry force. 
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+We have used the methoxy radical isomerization reaction as an example. By propagating ab initio BOMD on the electronic surface as computed by the generalized Hartree-Fock method with spin-orbit coupling, we show that the nuclear Berry force is important for total angular momentum conservation and angular momentum transfer.
