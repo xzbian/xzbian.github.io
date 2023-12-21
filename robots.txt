@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 permalink: /robots.txt
 ---
@@ -6,9 +5,3 @@ User-agent: *
 Disallow:
 
 Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
-=======
-User-agent: *
-Disallow:
-
-Sitemap: https://xzbian.github.io/sitemap.xml
->>>>>>> origin/gh-pages

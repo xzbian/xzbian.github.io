@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // create element for copy button in code blocks
 var codeBlocks = document.querySelectorAll('pre');
 codeBlocks.forEach(function (codeBlock) {
@@ -45,6 +44,3 @@ codeBlocks.forEach(function (codeBlock) {
     wrapper.append(copyButton);
   }
 });
-=======
-var codeBlocks=document.querySelectorAll("pre");codeBlocks.forEach(function(e){if(e.querySelector("pre:not(.lineno)")||e.querySelector("code")){var n=document.createElement("button");n.className="copy",n.type="button",n.ariaLabel="Copy code to clipboard",n.innerText="Copy",n.innerHTML='<i class="fa-solid fa-clipboard"></i>',n.addEventListener("click",function(){if(e.querySelector("pre:not(.lineno)"))var o=e.querySelector("pre:not(.lineno)").innerText.trim();else o=e.querySelector("code").innerText.trim();window.navigator.clipboard.writeText(o),n.innerText="Copied",n.innerHTML='<i class="fa-solid fa-clipboard-check"></i>',setTimeout(function(){n.innerText="Copy",n.innerHTML='<i class="fa-solid fa-clipboard"></i>'},3e3)});var o=document.createElement("div");o.className="code-display-wrapper",e.parentElement.insertBefore(o,e),o.append(e),o.append(n)}});
->>>>>>> origin/gh-pages
