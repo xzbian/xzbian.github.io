@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     const mode_toggle = document.getElementById("light-toggle");
 
@@ -6,3 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+=======
+document.addEventListener("DOMContentLoaded",function(){document.getElementById("light-toggle").addEventListener("click",function(){toggleTheme(localStorage.getItem("theme"))})});
+>>>>>>> origin/gh-pages
