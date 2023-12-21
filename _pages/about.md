@@ -30,5 +30,5 @@ Here is how to pronounce my name : Xuezhi Bian (边学志).
 My current research interest focus on non-adiabatic dynamics and spin chemistry, 
 feel free to check out my [research projects](/projects/) and [publications](/publications/) for more details!
 
-I expect to defense my dissertation in summer 2024 and I am on the lookout for a postdoc position. 
+I expect to defend my dissertation in summer 2024 and I am on the lookout for a postdoc position. 
 Excited to keep learning and exploring!
